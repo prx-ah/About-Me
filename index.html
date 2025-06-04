@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Johnson - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+<body>
+  <header>
+    <div id="navbar"></div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <div class="info">
+        <span class="badge">Hello I'm</span>
+        <h1>Alex Johnson</h1>
+        <h2>Product Designer</h2>
+        <p><i class="fa fa-envelope"></i> getemail@gmail.com</p>
+        <p><i class="fa fa-phone"></i> +12 966 987 7867</p>
+        <p><i class="fa fa-map-marker-alt"></i> 37, Poland St, New York, United State</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="profile-pic">
+        <img src="image/profile.jpg" alt="Alex Johnson">
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="dev-illustration.png" alt="Developer Illustration" class="dev-illustration"/>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello, I'm a Patrick, web-developer based on Paris. I have rich experience in web site design & building and customization. Also I am good at:</p>
+        <div class="skills">
+          <span>php</span><span>html</span><span>css</span><span>php</span><span>wordpress</span><span>React</span><span>Javascript</span>
+        </div>
+        <a href="#" class="btn">Download CV <i class="fa fa-download"></i></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
