@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Johnson - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+<body>
+  <header>
+    <div id="navbar"></div>
+  </header>
+
+  <main class="container">
+    <section class="profile">
+      <div class="info">
+        <span class="badge">Hello I'm</span>
+        <h1>Peerawat Khettakarn</h1>
+        <h2>Software Developer</h2>
+        <p><i class="fa fa-envelope"></i> peerawatkhettakarn@gmail.com</p>
+        <p><i class="fa fa-phone"></i>+66 816437942</p>
+        <p><i class="fa fa-map-marker-alt"></i>  Lak Hok, Mueang Pathum Thani District, Pathum Thani, Thailand</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/prx-ah"><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="profile-pic">
+        <img src="image/profile.jpg" alt="Alex Johnson">
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="image/coding.gif"Developer Illustration" class="dev-illustration"/>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Love to improve my skills to be a better developer. I  can be a good part of a team and work well with others. I like to listen to my team partner's opinion and brainstorm to part through the problem. Moreover, I am a rapidly learning person, I am looking for a full-stack developer position, wishing to be a part of your team, and the Company.</p>
+        <div class="skills">
+          <span>Angular</span><span>.Net C#</span><span>Typescript</span><span>Spring boot</span><span>Python</span><span>React</span><span>Javascript</span>
+        </div>
+        <a href="file/Resume.pdf" class="btn-cv" download="file/Resume.pdf">Download CV <i class="fa fa-download"></i></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
